@@ -60,7 +60,7 @@
 
 		  <label class="col-sm-2 col-form-label">Conteúdo:</label>
 		  <div class="col-sm-8">
-          <textarea name="body" class="form-control">{{old('body')}}</textarea>
+          <textarea name="body" class="form-control bodyfield">{{old('body')}}</textarea>
 		  
 
 		</div>
@@ -75,13 +75,38 @@
 
 
 	</form>
+	
+          		  
+
+</div>
+</div>
+
+
+<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
+<script>
+tinymce.init({
+selector: 'textarea.bodyfield',
+heigth:300,
+menubar:false,
+plugins:['link','table', 'image', 'autoresize','lists'],
+toolbar: "undo redo |  bold italic backcolor | numlist bullist | alignleft aligncenter alignright alignjustify | outdent indent | link image |table",
+content_css:[
+'{{asset('Assets/css/content.css')}}'
+
+],
+images_upload_url:'{{route('imageupload')}}',
+images_upload_credentials:true
+
+
+});
+</script>
+
+
+
+
 
 	@endsection
 
 
-
-</div>
-
-
-</div>
 

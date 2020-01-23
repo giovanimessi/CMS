@@ -96,7 +96,7 @@
 
 		  ],
 		  images_upload_url:'{{route('imageupload')}}',
-		  images_upload_credentials:true    
+		  images_upload_credentials:true
        
 
 		});

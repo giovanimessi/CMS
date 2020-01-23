@@ -97,7 +97,8 @@
                          
                             {{$front_config['subtitle']}}
                         </p>
-                        <div class="socail_links">
+                        <!--redes sociais-->
+                        <div class="socail_links"><
                             <ul>
                                 <li>
                                     <a href="#">
@@ -139,38 +140,6 @@
                            
                         </ul>
 
-                    </div>
-                </div>
-                <div class="col-xl-2 col-md-6 col-lg-2">
-                    <div class="footer_widget">
-                        <h3 class="footer_title">
-                                Useful Links
-                        </h3>
-                        <ul>
-                            <li><a href="#">Pricing</a></li>
-                            <li><a href="#">Features</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6 col-lg-3">
-                    <div class="footer_widget">
-                        <h3 class="footer_title">
-                                Downloads
-                        </h3>
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    Download from Apple Store
-
-                                </a>
-                            </li>
-                            <li><a href="#">
-                                    Download from Play Store
-                                </a>
-                            </li>
-                            </ul>
                     </div>
                 </div>
             </div>

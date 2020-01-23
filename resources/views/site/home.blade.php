@@ -4,6 +4,8 @@
 
 
 
+
+
 @section('content') <!--corpo do sistema-->
 
 <!-- slider_area_start -->
@@ -17,7 +19,7 @@
                             </h3>
                         <p class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".1s"> {{$front_config['subtitle']}}</p>
                         <div class="video_service_btn wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".1s">
-                            <a href="#" class="boxed-btn3">Escreva</a>
+                           
                         </div>
                     </div>
                 </div>
@@ -31,6 +33,7 @@
     </div>
 </div>
 <!-- slider_area_end -->
+
 
 
 @endsection
