@@ -34,7 +34,7 @@ class AppServiceProvider extends ServiceProvider
         //pega  o menu
 
         $frontMenu = [
-            '/' => 'Home'
+            '/' => 'Home' //pagina home
                 
 
         ];
@@ -62,6 +62,8 @@ class AppServiceProvider extends ServiceProvider
         foreach($settings as $setting){
 
             $config[$setting['name'] ]= $setting['content'];
+
+            
         }
 
         View::share('front_config', $config);

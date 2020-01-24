@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="zxx">
+<html class="no-js" lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -27,6 +27,7 @@
     
 </head>
 <body>
+   
     <header>
         <div class="header-area ">
             <div id="sticky-header" class="main-header-area">
@@ -35,7 +36,7 @@
                         <div class="col-xl-3 col-lg-2">
                             <div class="logo">
                                 <a href="/">
-                                    <div class="h2" style="color:white">GIOVANI </div>
+                                   <div class="h2"><span>Giovani</span></div> 
                                 </a>
                             </div>
                         </div>
@@ -43,27 +44,20 @@
                             <div class="main-menu  d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">
-                                      @foreach($front_menu as $menuSlug => $menutitle )
+                                        @foreach($front_menu as $menuSlug => $menutitle )
                                    
 
-                                        <li>
+        <li>
 
-                                        <a href="{{$menuSlug}}">{{$menutitle}}</a>
+        <a href="{{$menuSlug}}">{{$menutitle}}</a>
 
-                                        </li>
-
-                
-
-
-                                      @endforeach
-                                      
+        </li>
+        @endforeach
                                     </ul>
                                 </nav>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-3 d-none d-lg-block">
-                          
-                        </div>
+                
                         <div class="col-12">
                             <div class="mobile_menu d-block d-lg-none"></div>
                         </div>
@@ -73,6 +67,8 @@
             </div>
         </div>
     </header>
+ 
+       
    
 
  
@@ -151,9 +147,8 @@
             <div class="row">
                 <div class="col-xl-12">
                     <p class="copy_right text-center">
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> Giovani Moura
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
                     </p>
                 </div>
             </div>
@@ -162,7 +157,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Giova
 </footer>
 <!--/ footer end  -->
 
-<!-- JS here -->
+<!-- JS  -->
 <script src="{{asset('/Assets/js/vendor/modernizr-3.5.0.min.js')}}"></script>
 <script src="{{asset('/Assets/js/vendor/jquery-1.12.4.min.js')}}"></script>
 <script src="{{asset('/Assets/js/popper.min.js')}}"></script>
@@ -182,7 +177,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Giova
 <script src="{{asset('/Assets/js/plugins.js')}}"></script>
 <script src="{{asset('/Assets/js/gijgo.min.js')}}"></script>
 
-<!--contact js-->
+<!--contato js-->
 <script src="{{asset('js/contact.js ')}}"></script>
 <script src="{{asset('js/jquery.ajaxchimp.min.js')}}"></script>
 <script src="{{asset('js/jquery.form.js')}}"></script>
