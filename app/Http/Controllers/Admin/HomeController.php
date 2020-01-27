@@ -41,9 +41,10 @@ class HomeController extends Controller
        $pageCount = Page::count();
            
        $pagePie =[
-         'teste 1' => 100,
-         'teste 2'=> 200,
-         'teste 3' => 300
+         'visitas' => $visitsCount,
+         'Páginas' =>   $pageCount,
+         'Usuários' => $userCount
+
 
        ];
 

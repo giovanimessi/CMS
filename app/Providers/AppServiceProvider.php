@@ -62,7 +62,7 @@ class AppServiceProvider extends ServiceProvider
         foreach($settings as $setting){
 
             $config[$setting['name'] ]= $setting['content'];
-
+            
             
         }
 

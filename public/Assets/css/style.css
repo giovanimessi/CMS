@@ -35,7 +35,7 @@ body {
   transition: 0.3s;
 }
 
-/* line 16, ../../Arafath/CL/CL October/214. App Landing Page/HTML/scss/theme-default.scss */
+
 a,
 .button {
   -webkit-transition: 0.3s;
@@ -44,19 +44,17 @@ a,
   transition: 0.3s;
 }
 
-/* line 20, ../../Arafath/CL/CL October/214. App Landing Page/HTML/scss/theme-default.scss */
+
 a:focus,
 .button:focus, button:focus {
   text-decoration: none;
   outline: none;
 }
 
-/* line 25, ../../Arafath/CL/CL October/214. App Landing Page/HTML/scss/theme-default.scss */
 a:focus {
   text-decoration: none;
 }
 
-/* line 28, ../../Arafath/CL/CL October/214. App Landing Page/HTML/scss/theme-default.scss */
 a:focus,
 a:hover,
 .portfolio-cat a:hover,
@@ -64,11 +62,11 @@ a:hover,
   text-decoration: none;
 }
 
-/* line 34, ../../Arafath/CL/CL October/214. App Landing Page/HTML/scss/theme-default.scss */
 a,
 button {
-  color: #1F1F1F;
+  color: #FFF;
   outline: medium none;
+  margin: 10px;
 }
 
 /* line 39, ../../Arafath/CL/CL October/214. App Landing Page/HTML/scss/theme-default.scss */

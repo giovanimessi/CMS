@@ -89,7 +89,7 @@
 
       <h3>{{$userCount}}</h3>
 
-       <p>Visitantes</p>
+       <p>Usuários</p>
       
 
         </div>
@@ -105,7 +105,7 @@
   <div class="col-md-6">
     <div class="card">
       <div class="card-header">
-        <h5 class="card-title">Paǵinas mais visitadas</h5>
+        <h5 class="card-title">Evolução</h5>
       </div>
       <div class="card-body">
           <canvas id="pagePie"></canvas>
@@ -117,7 +117,7 @@
   <div class="col-md-6">
     <div class="card">
       <div class="card-header">
-        <h5 class="card-title">Sobre o Sistema</h5>
+        <h5 class="card-title">Pensado o que coloca aqui</h5>
       </div>
       <div class="card-body">
           ...............
@@ -136,8 +136,23 @@ window.onload = function(){
     data:{
       datasets:[{
         data:{{$pgeValues}},  //valores
-        backgroundColor:'#00ffff'
+        backgroundColor:[
+                 '#2ECCFA', //cores do gr]afico
+                '#DBA901',
+                '#FF0000'
+                
+            ]
+      
+
+  
+
       }],
+
+  
+
+    
+    
+
 
       labels:{!! $pagesLabels !!} 
 
@@ -150,7 +165,7 @@ window.onload = function(){
     }
 
 
-  })
+  });
 
 }
 

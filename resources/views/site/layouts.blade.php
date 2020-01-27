@@ -27,49 +27,53 @@
     
 </head>
 <body>
-   
+
+
     <header>
-        <div class="header-area ">
-            <div id="sticky-header" class="main-header-area">
-                <div class="container-fluid">
-                    <div class="row align-items-center">
-                        <div class="col-xl-3 col-lg-2">
-                            <div class="logo">
-                                <a href="/">
-                                   <div class="h2"><span>Giovani</span></div> 
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-lg-7">
-                            <div class="main-menu  d-none d-lg-block">
-                                <nav>
-                                    <ul id="navigation">
-                                        @foreach($front_menu as $menuSlug => $menutitle )
-                                   
 
-        <li>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        
+            <a class="navbar-brand" href="/">LOGO</a>
+          
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <!-- Navbar menu -->
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-7 col-md-6">
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
 
-        <a href="{{$menuSlug}}">{{$menutitle}}</a>
+    @foreach($front_menu as $menuSlug => $menutitle )
+                <li class="nav-item">
+                  
+                    <a href="{{$menuSlug}}">{{$menutitle}}</a>
 
-        </li>
-        @endforeach
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                
-                        <div class="col-12">
-                            <div class="mobile_menu d-block d-lg-none"></div>
-                        </div>
-                    </div>
-
-                </div>
+                </li>
+                @endforeach
+              </ul>
             </div>
-        </div>
+            </div>
+            </div>
+
+            </div>  
+          </nav>
+
     </header>
- 
-       
-   
+        
+
+
+
+
+
+
+
+        
+
+           
 
  
  @yield('content')
