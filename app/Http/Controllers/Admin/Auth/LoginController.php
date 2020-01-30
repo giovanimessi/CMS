@@ -68,7 +68,7 @@ class LoginController extends Controller
               if(Auth::attempt($data, $remember)){
                 return redirect()->route('admin');
               }else{
-                 $validator ->errors()->add('password', 'Senha ou /email errdos');
+                 $validator ->errors()->add('password', 'Senha ou /email errados');
 
                 return redirect()->route('login')
                 ->withErrors($validator)
